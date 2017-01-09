@@ -1,0 +1,38 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_normalize.scss",
+		"../scss/base/_base.scss",
+		"../scss/modules/_blocks.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_components.scss",
+		"../scss/modules/_forms.scss",
+		"../scss/modules/_sections.scss",
+		"../scss/modules/_typography.scss",
+		"../scss/layouts/_footer.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_nav.scss"
+	],
+	"sourcesContent": [
+		"/* \n\tCustom logo's for your clothes.\n\tOwner: Edward Wood\n\tAuthor: Jason Heyer\n\tVersion: 0.0.1\n*/ \n\n/* BASE - Base styles, variables, mixins, etc */ \n\n@import 'base/_variables.scss'; \n@import 'base/_mixins.scss';\n@import 'base/_normalize.scss';\n@import 'base/_base.scss'; \n\n/* MODULES - Individual site components */ \n\n@import 'modules/_blocks.scss';\n@import 'modules/_buttons.scss';\n@import 'modules/_components.scss';\n@import 'modules/_forms.scss';\n@import 'modules/_sections.scss';\n@import 'modules/_typography.scss'; \n\n/* LAYOUTS - Page layout styles */ \n\n@import 'layouts/_footer.scss';\n@import 'layouts/_header.scss';\n@import 'layouts/_nav.scss';\n",
+		"/* Font Colors */\n$base-font-size:15px;\n$base-font-family:\"Segoe UI,\"Segoe WP,\"Segoe Regular,sans-serif\";\n$base-font-color:#666666;\n/* Background COlors */\n$primary-color:#00aff0;\n$secondary-color:#7fba00;\n$light-color:#e4eef2;\n$dark-color:#555555;\n",
+		"\n/* Mixins */\n\n@mixin border-radius($radius){\n  -moz-border-radius:$radius;\n  -webkit-border-radius:$radius;\n  border-radius:$radius;\n}\n\n@mixin add-border($size,$color,$position){\n  @if $position == \"all\"{\n    border:$size solid $color;\n  }@else-if $position == \"top\"{\n    border-top:$size solid $color;\n  }@else-if $position == \"bottom\"{\n    border-bottom:$size solid $color;\n  }@else-if $position == \"left\"{\n    border-left:$size solid $color;\n  }@else-if $position == \"right\"{\n    border-right:$size solid $color;\n  }\n}\n",
+		"h1,h2,h3,h4,h5{\n  margin-top:none;\n}\n.page-header{\n  margin-top:30px;\n}\n",
+		"body{\n  font-family:$base-font-family;\n  font-size:$base-font-size;\n  line-height:1.7em;\n  color:$base-font-color;\n\n}\n\na{\n  color:$primary-color;\n}\n\nul,li{\n  list-style:none;\n}\ninput,textarea,button{\n@include border-radius(0px);\n}\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"/* Navbar */\n\n-navbar{\n  width: 90%;\n  margin: auto;\n  @include add-border(1px, #e7e7e7,\"right-left\")\n  min-height:60px;\n  margin-bottom:30px;\n  background:#fff;\n  margin-bottom:30px; \n}\n"
+	],
+	"mappings": "AAAA;;;;;EAKE;AAEF,gDAAgD;ACPhD,iBAAiB;AAIjB,uBAAuB;ACHvB,YAAY;;ACDZ,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,CAAA;EACZ,UAAU,EAAC,IAAK;CACjB;;;AACD,AAAA,YAAY,CAAA;EACV,UAAU,EAAC,IAAK;CACjB;;;ACLD,AAAA,IAAI,CAAA;EACF,WAAW,EHCK,WAAW,CAAA,KAAK,CAAC,EAAE,EAAC,0BAA0B;EGA9D,SAAS,EHDK,IAAI;EGElB,WAAW,EAAC,KAAM;EAClB,KAAK,EHDU,OAAO;CGGvB;;;AAED,AAAA,CAAC,CAAA;EACC,KAAK,EHJQ,OAAO;CGKrB;;;AAED,AAAA,EAAE,EAAC,AAAA,EAAE,CAAA;EACH,UAAU,EAAC,IAAK;CACjB;;;AACD,AAAA,KAAK,EAAC,AAAA,QAAQ,EAAC,AAAA,MAAM,CAAA;EFXnB,kBAAkB,EEYG,GAAG;EFXxB,qBAAqB,EEWA,GAAG;EFVxB,aAAa,EEUQ,GAAG;CACzB;;AJHD,0CAA0C;AAS1C,kCAAkC;AavBlC,YAAY;;AAEZ,AAAA,OAAO,CAAA;EACL,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,IAAK;EAEb,UAAU,EAAC,IAAK;EAChB,aAAa,EAAC,IAAK;EACnB,UAAU,EAAC,IAAK;EAChB,aAAa,EAAC,IAAK;CACpB;;AXEE,QAAQ,CAAR,kBAAQ;;EWVX,AAAA,OAAO,CAAP;IXWI,UAAU,EWRQ,GAAG,CXQJ,KAAK,CWRC,OAAO;GAKjC;;;AXIE,QAAQ,CAAR,qBAAQ;;EWZX,AAAA,OAAO,CAAP;IXaI,aAAa,EWVK,GAAG,CXUD,KAAK,CWVF,OAAO;GAKjC;;;AXME,QAAQ,CAAR,mBAAQ;;EWdX,AAAA,OAAO,CAAP;IXeI,WAAW,EWZO,GAAG,CXYH,KAAK,CWZA,OAAO;GAKjC;;;AXQE,QAAQ,CAAR,oBAAQ;;EWhBX,AAAA,OAAO,CAAP;IXiBI,YAAY,EWdM,GAAG,CXcF,KAAK,CWdD,OAAO;GAKjC",
+	"names": []
+}

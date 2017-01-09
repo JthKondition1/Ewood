@@ -1,0 +1,87 @@
+/* 
+	Custom logo's for your clothes.
+	Owner: Edward Wood
+	Author: Jason Heyer
+	Version: 0.0.1
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* Font Colors */
+/* Background COlors */
+/* Mixins */
+/* line 1, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: none;
+}
+
+/* line 4, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 1, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_base.scss */
+body {
+  font-family: "Segoe UI," Segoe WP, "Segoe Regular,sans-serif";
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 9, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 13, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* MODULES - Individual site components */
+/* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 3, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/layouts/_nav.scss */
+-navbar {
+  width: 90%;
+  margin: auto;
+  min-height: 60px;
+  margin-bottom: 30px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+@else-if $position == "top" {
+  /* line 3, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/layouts/_nav.scss */
+  -navbar {
+    border-top: 1px solid #e7e7e7;
+  }
+}
+
+@else-if $position == "bottom" {
+  /* line 3, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/layouts/_nav.scss */
+  -navbar {
+    border-bottom: 1px solid #e7e7e7;
+  }
+}
+
+@else-if $position == "left" {
+  /* line 3, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/layouts/_nav.scss */
+  -navbar {
+    border-left: 1px solid #e7e7e7;
+  }
+}
+
+@else-if $position == "right" {
+  /* line 3, /home/jason/Desktop/Development/WebDev Projects/CustomLogos/scss/layouts/_nav.scss */
+  -navbar {
+    border-right: 1px solid #e7e7e7;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */
